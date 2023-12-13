@@ -38,6 +38,16 @@ export default {
             default:false
         }
     },
+    emits: {
+        'mon-event-premium': function(id) {
+            if(id === true) {
+                return true;
+            } else {
+                console.warn('No Id :(');
+                return false;
+            }
+        }
+    },
     data(){
         return{
             detailsVisibles:false,
@@ -50,7 +60,7 @@ export default {
         },
         afficherPremium(){
             //this.premiumData = !this.premiumData;
-            this.$emit('moneventpremium',this.id);
+            this.$emit('mon-event-premium',this.id);
         }
     },
 }

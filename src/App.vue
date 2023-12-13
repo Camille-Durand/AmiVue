@@ -4,7 +4,7 @@
       <ul class="list-group">
         <un-ami v-for="unAmi in lesAmis" 
         v-bind:key="unAmi.id" :id="unAmi.id" :leNom="unAmi.name" :lePhone="unAmi.phone" :leMail="unAmi.email" :premium="unAmi.premium" 
-        @moneventpremium="afficherStatusPremium(unAmi.id)">
+        @mon-event-premium="afficherStatusPremium(unAmi.id)">
         </un-ami>
       </ul>
     <!-- </div> -->
