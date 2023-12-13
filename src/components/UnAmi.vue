@@ -9,7 +9,7 @@
                 <li class="list-group-item">{{leMail}}</li>
             </ul>
         </ul>
-        
+
     </div> 
 </template>
 
@@ -19,8 +19,6 @@ export default {
         leNom:{
             type:String,
             required:true
-            // required:false,
-            // default:'NomParDefaut'
         },
         lePhone:{
             type:String,
@@ -34,18 +32,11 @@ export default {
             type:Boolean,
             required:false,
             default:false
-            //validator: function(value){return value==='1' || value==='0'}
         }
     },
     data(){
         return{
             detailsVisibles:false,
-            /*unPote:{
-                id:'jojo',
-                name:"jojoLeBarjo",
-                phone:'123 12346 24',
-                email:'jojo@barjo.com',
-            },*/
             premiumData: this.premium,
 
 
@@ -57,13 +48,8 @@ export default {
             this.detailsVisibles = !this.detailsVisibles;
         },
         afficherPremium(){
-            /*if(this.premiumData ==='1'){
-                this.premiumData = '0';
-            }
-            else{
-                this.premiumData = '1';
-            }*/
-            this.premiumData = !this.premiumData;
+            //this.premiumData = !this.premiumData;
+            this.$emit('moneventpremium');
         }
     },
 }
