@@ -40,7 +40,7 @@ export default {
     },
     emits: {
         'mon-event-premium': function(id) {
-            if(id === true) {
+            if(id) {
                 return true;
             } else {
                 console.warn('No Id :(');
