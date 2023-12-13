@@ -3,8 +3,8 @@
       <h1 class="text-center">Les Amis</h1>
       <ul class="list-group">
         <un-ami v-for="unAmi in lesAmis" 
-        v-bind:key="unAmi.id" :leNom="unAmi.name" :lePhone="unAmi.phone" :leMail="unAmi.email" :premium="unAmi.premium" 
-        @moneventpremium="afficherStatusPremium()">
+        v-bind:key="unAmi.id" :id="unAmi.id" :leNom="unAmi.name" :lePhone="unAmi.phone" :leMail="unAmi.email" :premium="unAmi.premium" 
+        @moneventpremium="afficherStatusPremium(unAmi.id)">
         </un-ami>
       </ul>
     <!-- </div> -->
@@ -32,8 +32,10 @@ export default{
     }
   },
     methods: {
-        afficherStatusPremium() {
-            console.log("Howdy");
+        afficherStatusPremium(leIdDansUnAmi) {
+            let unAmiIdentified = this.lesAmis.find(unTruc => unTruc.id === leIdDansUnAmi);
+            unAmiIdentified.premium = !unAmiIdentified.premium;
+            console.log(unAmiIdentified);
         }
     }
 }
