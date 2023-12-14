@@ -1,7 +1,7 @@
 <template>
     <div class="container my-1">
         <ul class="list-group">
-            <h2 class="list-group-item">{{leNom}} {{premium === true ? 'Ami premium':'Ami nul'}}</h2> 
+            <h2 class="list-group-item">{{leNom}} {{premium === true ? '(Ami premium)':'(Ami nul)'}}</h2> 
             <button @click="afficherPremium" class="btn btn-danger">Premium ?</button>
             <button @click="afficherDetails" class="btn btn-primary">{{detailsVisibles? 'Masquer': 'Afficher'}}</button>           
             <ul v-if="detailsVisibles" class="list-group">

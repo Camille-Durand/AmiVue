@@ -1,6 +1,6 @@
 <template>
     <div class="container bg-info my-1">
-        <form @submit.prevent="submitData()">
+        <form @submit.prevent="submitData">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Name</label>
             <input  class="form-control form-control-sm" type="text" placeholder="votre nom" aria-label=".form-control-sm example"
