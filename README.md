@@ -1,25 +1,4 @@
 # AmiVue
 CDA: Exercice Vue mais en + complexe
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<img width="728" alt="1" src="https://github.com/Camille-Durand/AmiVue/assets/75265358/e4111745-caae-4762-9486-3d078326b4d5">
